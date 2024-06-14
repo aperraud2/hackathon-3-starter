@@ -14,15 +14,15 @@ class NewOwnerController extends Controller
 
     public function create(Request $request, $id = null)
     {
-        $newowner = Owner::get();
+        $newowners = Owner::get();
 
         if ($id) {
-            $newowner = Owner::findOrFail($id);
+            $newowners = Owner::findOrFail($id);
         } else {
-            $newowner = new Owner;
+            $newowners = new Owner;
         }
 
-        return view('newowners.index', compact('newowner'));
+        return view('newowners.index', compact('newowners'));
     }
 
     public function store(Request $request, $id = null)

@@ -11,13 +11,13 @@
     @csrf
     <form action="{{ route('newowners.store') }}" method="post">
         Client first name: <br>
-        <input type="text" name="first_name" value="{{ old('first_name', $newowner->first_name) }}"> <br>
+        <input type="text" name="first_name" value="{{ old('first_name', $newowners->first_name) }}"> <br>
         Client last name: <br>
-        <input type="text" name="surname" value="{{ old('first_name', $newowner->surname) }}"> <br>
+        <input type="text" name="surname" value="{{ old('first_name', $newowners->surname) }}"> <br>
         Client email: <br>
-        <input type="email" name="email" value="{{ old('email', $newowner->email) }}"> <br>
+        <input type="email" name="email" value="{{ old('email', $newowners->email) }}"> <br>
         Client phone number: <br>
-        <input type="number" name="phone" value="{{ old('phone', $newowner->phone) }}"> <br>
+        <input type="number" name="phone" value="{{ old('phone', $newowners->phone) }}"> <br>
         </select>
         <br>
         <br>
